@@ -83,8 +83,8 @@ production:
     <<: *default
     adapter: postgresql
     encoding: unicode
-    host: 127.0.0.1
-    port: 5432
+    host: ec2-18-225-37-49.us-east-2.compute.amazonaws.com
+    port: 22
     database: alpha_production
     username: alpha
     password: <%= ENV["POSTGRES_ROOT_PASSWORD"] %>
