@@ -7,7 +7,7 @@ image: paxhealth10
 # Deploy to these servers.
 servers:
   web:
-    - ec2-user@ec2-3-17-5-227.us-east-2.compute.amazonaws.com
+    - ec2-3-17-5-227.us-east-2.compute.amazonaws.com
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -17,9 +17,9 @@ servers:
 
 
 registry:
-  server: 794038256271.dkr.ecr.us-east-1.amazonaws.com
+  server: 794038256271.dkr.ecr.us-east-2.amazonaws.com
   username: AWS
-  password: <%= %x(aws ecr get-login-password --region us-east-1) %>
+  password: <%= %x(aws ecr get-login-password --region us-east-2) %>
 
 
 # Use a different ssh user than root
