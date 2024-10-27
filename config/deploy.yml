@@ -99,7 +99,7 @@ accessories:
     image: postgres:14.13
     host: ec2-18-225-37-49.us-east-2.compute.amazonaws.com
     # Change to 3306 to expose port to the world instead of just local network.
-    port: 5432
+    port: 80
     env:
       clear:
         MYSQL_ROOT_HOST: '%'
